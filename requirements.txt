@@ -1,0 +1,5 @@
+yfinance>=0.2.18
+openai>=1.0.0
+python-dotenv>=1.0.0
+litellm>=1.0.0
+geopy>=2.3.0
