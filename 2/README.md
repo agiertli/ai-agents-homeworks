@@ -74,11 +74,12 @@ This workflow uses HTTP Request nodes to communicate with Ollama.
 1. Go to Credentials → Add Credential → OpenAI
 2. Add your OpenAI API key
 3. Save the credentials
-4. Import the `n8n-workflow-agent.json` file
+4. Import the `ai-agent-sql.json` file
 5. Update the credentials in the workflow nodes:
    - PostgreSQL node: Select the PostgreSQL credentials you created
    - OpenAI nodes: Select the OpenAI credentials you created
-6. Save and activate the workflow
+6. Configure ollama credentials
+7. Save and activate the workflow
 
 ## Using the Database Agent
 
