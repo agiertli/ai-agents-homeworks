@@ -51,7 +51,7 @@ You have two workflow options:
 #### Option A: Using Ollama with AI Agent and SQL Tool (Recommended)
 
 1. In n8n, click on "Workflows" → "Add workflow" → "Import from file"
-2. Upload the `n8n-workflow-agent-sql-tool.json` file
+2. Upload the `ai-agent-sql.json` file
 3. Update the credentials in the workflow nodes:
    - SQL Tool: Select the PostgreSQL credentials you created
 4. Save and activate the workflow
@@ -61,25 +61,6 @@ This workflow uses:
 - **SQL Tool**: PostgreSQL as a tool (not a node) that the agent can use
 - **Ollama Chat Model**: Local LLM using Mistral 7B
 
-#### Option B: Using Ollama with HTTP Requests (Alternative)
-
-1. Import the `n8n-workflow-agent-ollama.json` file
-2. Update PostgreSQL credentials
-3. Save and activate the workflow
-
-This workflow uses HTTP Request nodes to communicate with Ollama.
-
-#### Option C: Using OpenAI (Requires API Key)
-
-1. Go to Credentials → Add Credential → OpenAI
-2. Add your OpenAI API key
-3. Save the credentials
-4. Import the `ai-agent-sql.json` file
-5. Update the credentials in the workflow nodes:
-   - PostgreSQL node: Select the PostgreSQL credentials you created
-   - OpenAI nodes: Select the OpenAI credentials you created
-6. Configure ollama credentials
-7. Save and activate the workflow
 
 ## Using the Database Agent
 
